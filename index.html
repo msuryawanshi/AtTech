@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Website</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        nav {
+            background: #444;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+        .section-dark {
+            background: #f4f4f4;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our Company</h1>
+        <p>Your trusted partner in innovation and solutions.</p>
+    </header>
+
+    <nav>
+        <a href="#mission">Our Mission</a>
+        <a href="#clients">Clients</a>
+        <a href="#services">Services</a>
+        <a href="#solutions">Solutions</a>
+    </nav>
+
+    <section id="mission">
+        <h2>Our Mission</h2>
+        <p>To deliver innovative solutions that empower businesses to achieve their goals.</p>
+    </section>
+
+    <section id="clients" class="section-dark">
+        <h2>Clients</h2>
+        <p>We are proud to work with industry leaders and innovators across the globe.</p>
+    </section>
+
+    <section id="services">
+        <h2>Services</h2>
+        <p>Our services include software development, IT consulting, and digital transformation.</p>
+    </section>
+
+    <section id="solutions" class="section-dark">
+        <h2>Solutions</h2>
+        <p>We provide tailored solutions to meet the unique needs of our clients.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Company Name. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
