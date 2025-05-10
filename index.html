@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -12,12 +12,14 @@
             padding: 0;
             line-height: 1.6;
         }
+
         header {
             background: #333;
             color: #fff;
             padding: 10px 20px;
             text-align: center;
         }
+
         nav {
             background: #444;
             color: #fff;
@@ -28,22 +30,27 @@
             top: 0;
             z-index: 1000;
         }
-        nav a {
-            color: #fff;
-            margin: 0 15px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        nav a:hover {
-            text-decoration: underline;
-        }
+
+            nav a {
+                color: #fff;
+                margin: 0 15px;
+                text-decoration: none;
+                font-weight: bold;
+            }
+
+                nav a:hover {
+                    text-decoration: underline;
+                }
+
         section {
             padding: 50px 20px;
             text-align: center;
         }
+
         .section-dark {
             background: #f4f4f4;
         }
+
         footer {
             background: #333;
             color: #fff;
@@ -53,9 +60,12 @@
     </style>
 </head>
 <body>
+    <img src="./AT-TechLogo.png" alt="AT-Tech.co AI powered company" style="width: 100px; height: auto;">
     <header>
         <h1>Welcome to Our Company</h1>
-        <p>Your trusted partner in innovation and solutions.</p>
+        <p><h4>Your trusted partner in innovation and solutions.</h4></p>
+        <p><h2>AI is everywhere. Transform your existing business workflows through Agentic AI by leveraging Tools.</h2></p>
+        <p><h3>AT-Tech.co specializes in AI/ML integration into clients’ exiting business processes, build and deploy Agentic AI systems, and full-stack development to drive your business forward.</h3></p>
     </header>
 
     <nav>
@@ -63,6 +73,7 @@
         <a href="#clients">Clients</a>
         <a href="#services">Services</a>
         <a href="#solutions">Solutions</a>
+        <a href="#contact">Contact us</a>
     </nav>
 
     <section id="mission">
@@ -84,15 +95,18 @@
         <h2>Solutions</h2>
         <p>We provide tailored solutions to meet the unique needs of our clients.</p>
     </section>
-
+    <section id="contact" class="section-dark">
+        <h2>Contact us</h2>
+        <p>Please write to us on contact@at-tech.co and we will respond within 24 hours.</p>
+    </section>
     <footer>
-        <p>&copy; 2025 Company Name. All rights reserved.</p>
+        <p>&copy; 2025 AT-Tech.co. All rights reserved.</p>
     </footer>
 
     <script>
         // Smooth scrolling for navigation links
         document.querySelectorAll('nav a').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
+            anchor.addEventListener('click', function (e) {
                 e.preventDefault();
                 document.querySelector(this.getAttribute('href')).scrollIntoView({
                     behavior: 'smooth'
