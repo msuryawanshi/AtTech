@@ -6,12 +6,51 @@
     <title>Company Website</title>
     <style>
         /* General Styles */
+        @media (max-width: 768px) {
+            .hero-content {
+                padding: 10px;
+                font-size: 14px;
+            }
+
+            .cta-button {
+                padding: 10px 20px;
+                font-size: 16px;
+            }
+
+            nav ul {
+                text-align: left;
+            }
+
+                nav ul li {
+                    display: block;
+                    margin: 10px 0;
+                }
+        }
         ul {
             list-style-type: none;
             padding: 0; /* Optional: Removes default padding */
             margin: 0; /* Optional: Removes default margin */
         }
-       body {
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #007BFF;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+      /* body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
@@ -24,7 +63,7 @@
             color: #fff;
             padding: 10px 20px;
             text-align: center;
-        }
+        }*/
 
         nav {
             background: #444;
@@ -57,11 +96,18 @@
             background: #f4f4f4;
         }
 
-        footer {
+       /* footer {
             background: #333;
             color: #fff;
             text-align: center;
             padding: 10px 0;
+        }*/
+        nav {
+            position: sticky;
+            top: 0;
+            background-color: #333;
+            padding: 10px 0;
+            z-index: 1000;
         }
     </style>
 </head>
@@ -74,14 +120,14 @@
         <p><h3>AT-Tech.co specializes in AI/ML integration into clients’ exiting business processes, build and deploy Agentic AI systems, and full-stack development to drive your business forward.</h3></p>
     </header>
 
-    <nav>
-        <a href="#mission">Our Mission</a>
-        <a href="#services">Services</a>
-        <a href="#solutions">Solutions</a>
-        <a href="#casestudies">Case Studies and Clients</a>
-        <a href="#aboutus">About us</a>
-        <a href="#contact">Contact us</a>
-    </nav>
+    <nav role="navigation" aria-label="Main Navigation">
+            <a href="#mission">Our Mission</a>
+            <a href="#services">Services</a>
+            <a href="#solutions">Solutions</a>
+            <a href="#casestudies">Case Studies and Clients</a>
+            <a href="#aboutus">About us</a>
+            <a href="#contact">Contact us</a>
+</nav>
 
     <section id="mission">
         <h2>Our Mission</h2>
